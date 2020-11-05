@@ -4,6 +4,7 @@ set -e
 
 if [[ -z "$TEMPLATE" ]]; then
     ls -al
+    ls -al /
     echo "Empty template specified. Looking for template.yml..."
 
     if [[ ! -f "template.yml" ]]; then
